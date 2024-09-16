@@ -29,7 +29,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 @CucumberOptions(
-        features = "src/test/resources/features/golfCourses.feature",
+        features = "src/test/resources/features",
         glue = "stepDefinition",
         monochrome = true,
         plugin= {"pretty", "html:target/cucumber-reports/TestRunner.html",

@@ -8,6 +8,8 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class GolfCourses {
     WebDriver driver;
     GolfCoursesPage golfCourse;
@@ -45,6 +47,7 @@ public class GolfCourses {
             System.out.println(result[i]);
             Assert.assertTrue(golfCourse.arrayContainsString(result, name ));
         }
+
     }
 
     @When("Select country {string} at selected button")
